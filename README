@@ -1,0 +1,6 @@
+h1. Closed Middleware
+
+h2. About
+
+Rack Middleware for websites that are only open 9am till 5pm. 
+Outside these hours vistors are shown a static html page to tell them the website is closed.
