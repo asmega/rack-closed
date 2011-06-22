@@ -9,6 +9,10 @@ h3. Usage
 
 h4. Rails 3
 
+in Gemfile
+
+@gem 'rack-closed'@
+
 in config/application.rb
 
 @config.middleware.use Rack::Closed@
