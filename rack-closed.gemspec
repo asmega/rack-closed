@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name        = "rack-closed"
-  s.version     = "0.0.1"
+  s.version     = "0.0.3"
   s.authors     = ["Phil Lee"]
   s.email       = ["asmega@ph-lee.com"]
   s.homepage    = "https://github.com/asmega/rack-closed"
