@@ -5,13 +5,11 @@ module Rack
     end
 
     def call(env)
-      hour = Time.now.hour
-
-      if hour < 9 || hour > 17
+      if (9..17).include?(Time.now.hour)
+        @app.call(env)
+      else
         file = ::File.read("#{::File.expand_path(::File.dirname(__FILE__))}/views/closed.html")
         [503, {"Content-Type" => "text/html"}, file]
-      else
-        @app.call(env)
       end
     end
   end
